@@ -62,6 +62,7 @@ nav a.active{
     color: #b74b4b;
     border-bottom: 3px solid #b74b4b;
 }
+
 .card{
     display: flex;
     justify-content: center;
@@ -76,18 +77,21 @@ nav a.active{
     border-radius: 13px;
     align-items: start;
     gap: 5px;
-    cursor: pointer;
-    
+    cursor: pointer;  
 }
 
 .card a div{
-    padding: 32px 5px;  
+    padding: 32px 5px;
 }
 .card a img{
     align-self: center;
     width: 45%;
     position: relative;
     left: 25px;
+}
+
+.project-titles{
+    padding-bottom: 15px;
 }
 .section-labels{
     display: block;
@@ -109,7 +113,7 @@ nav a.active{
 }
 #about-label{
     position: relative;
-    top: 200px;
+    top: 270px;
 }
 
 .contact{
@@ -315,7 +319,7 @@ span{
     grid-template-columns: 50% 50%;
     grid-template-rows: 1;
     gap: 8rem;
-    padding-top: 0;
+    padding-top: 200px;
 }
 .about-info{
     padding: 30px 20px;
@@ -389,8 +393,8 @@ span{
 #project{
     display: flex;
     justify-content: center;
-    align-items: start;
-    min-height: 60vh;
+    align-items: center;
+    min-height: 100vh;
 }
 /*Large Laptop */
 @media (max-width: 1030px){
@@ -427,11 +431,11 @@ span{
     }
     #project-label{
         position: relative;
-        top: 30px;
+        top: 200px;
     }
     #about-label{
         position: relative;
-        top: 25px;
+        top: 160px;
     }
     
     
@@ -488,7 +492,7 @@ span{
     }
     #about-label{
         position: relative;
-        top: 25px;
+        top: 160px;
     }
     
     .contact-storage{
@@ -502,6 +506,9 @@ span{
         height: 230px;
         border-radius: 13px;
         padding: 20px 30px;
+    }
+    #project{
+        align-items: start;
     }
 }
 /*Mobile */
@@ -563,7 +570,7 @@ span{
     }
     #about-label{
         position: relative;
-        top: 35px;
+        top: 170px;
     }
     #project-label{
         position: relative;
@@ -598,4 +605,3 @@ span{
         font-size: 16px;
     }
 }
-
