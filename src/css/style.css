@@ -88,6 +88,14 @@ nav a.active{
     position: relative;
     left: 25px;
 }
+.section-labels{
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: 200px;
+}
 /* Laptop screen Device or below */
 @media(max-width:995px){
     nav{
