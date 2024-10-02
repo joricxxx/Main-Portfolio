@@ -607,4 +607,7 @@ span{
     .contact h1{
         font-size: 16px;
     }
+    .contact{
+        min-height: 60vh;
+    }
 }
