@@ -62,9 +62,7 @@ nav a.active{
     color: #b74b4b;
     border-bottom: 3px solid #b74b4b;
 }
-.project{
-    justify-content: center;
-}
+
 .card{
     display: flex;
     width: 33.3%    ;
@@ -148,6 +146,7 @@ section{
     min-height: 100vh;
     padding: 5rem 9% 5rem;
     align-items: center;
+    justify-content: center;
 }
 .section-labels{
     top: 200px;
@@ -359,6 +358,9 @@ span{
 } */
 #project{
     display: flex;
+    justify-content: center;
+    align-items: start;
+    min-height: 60vh;
 }
 /* Laptop Below */
 @media (max-width: 1030px){
@@ -392,7 +394,7 @@ span{
     }
     #project-label{
         position: relative;
-        top: 200px;
+        top: 30px;
     }
     #about-label{
         position: relative;
@@ -448,7 +450,7 @@ span{
     }
     #project-label{
         position: relative;
-        top: 220px;
+        top: 30px;
     }
     #about-label{
         position: relative;
@@ -513,16 +515,13 @@ span{
     .card p{
         font-size: 8px;
     }
-    .about{
-        padding: 0;
-    }
     #about-label{
         position: relative;
-        top: 50px;
+        top: 35px;
     }
     #project-label{
         position: relative;
-        top: 220px;
+        top: 30px;
     }
 }
 
