@@ -94,7 +94,7 @@ nav a.active{
     font-weight: bold;
     text-align: center;
     position: relative;
-    top: 200px;
+    top: 300px;
 }
 /* Laptop screen Device or below */
 @media(max-width:995px){
@@ -135,7 +135,9 @@ section{
     padding: 5rem 9% 5rem;
     align-items: center;
 }
-
+.section-labels{
+    top: 200px;
+}
 .home{
     display: flex;
     justify-content: center;
@@ -237,7 +239,7 @@ span{
 }
 
 .typing-text{
-    font-size: 34px;
+    font-size: 1.2rem;
     font-weight: 600;
     min-width: 280px;
 }
@@ -383,7 +385,7 @@ span{
     }
 
     .home .home-content h3{
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
 
     .home-content h1{
@@ -422,6 +424,7 @@ span{
     .card p{
         font-size: 8px;
     }
+    
 }
 /* Mobile Below */
 @media(max-width:700px){
