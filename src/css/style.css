@@ -58,7 +58,7 @@ nav a{
 }
 
 nav a:hover,
-nav a.active{
+nav a:active{
     color: #b74b4b;
     border-bottom: 3px solid #b74b4b;
 }
@@ -384,7 +384,7 @@ span{
     
 }
 .contact-storage div h1{
-    font-size: 24px;
+    font-size: 18px;
 }
 .contact h1{
     font-size: 28px;
@@ -513,6 +513,9 @@ span{
         align-items: start;
         min-height: 60vh;
     }
+    .contact h1 i{
+        padding-left: 2px;
+    }
 }
 /*Mobile */
 @media(max-width:700px){
@@ -601,8 +604,7 @@ span{
         padding: 20px 30px;
     }
     .contact-storage div h1{
-        font-weight: bold;
-        font-size: 18px;
+        font-size: 14px;
     }
     .contact-storage div h3{
         font-size: 8px;
@@ -613,4 +615,8 @@ span{
     .contact{
         min-height: 60vh;
     }
+    .contact h1 i{
+        padding-left: 3px;
+    }
+    
 }
