@@ -109,16 +109,16 @@ nav a.active{
 }
 #project-label{
     position: relative;
-    top: 25px;
+    top: 230px;
 }
 #about-label{
     position: relative;
-    top: 270px;
+    top: 280px;
 }
 
 .contact{
     display: flex;
-    min-height: 60vh;
+    min-height: 100vh;
     flex-direction: column;
     justify-content: center;
 }
@@ -333,7 +333,6 @@ span{
     height: fit-content;
     justify-self: end;
     text-align: center;
-    margin-right: 40px;
 }
 .about-info h3{
     font-size: 20px;
@@ -437,6 +436,9 @@ span{
         position: relative;
         top: 160px;
     }
+    #project{
+        min-height: 100vh;
+    }
     
     
 }
@@ -492,7 +494,7 @@ span{
     }
     #about-label{
         position: relative;
-        top: 160px;
+        top: 160rpx;
     }
     
     .contact-storage{
@@ -509,6 +511,7 @@ span{
     }
     #project{
         align-items: start;
+        min-height: 60vh;
     }
 }
 /*Mobile */
