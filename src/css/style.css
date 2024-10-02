@@ -579,6 +579,9 @@ span{
         position: relative;
         top: 30px;
     }
+    #project{
+        min-height: 70px;
+    }
     header{
         position: static;
     }
