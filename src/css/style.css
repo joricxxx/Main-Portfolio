@@ -96,6 +96,20 @@ nav a.active{
     position: relative;
     top: 300px;
 }
+#about-label, #project-label{
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bolder;
+}
+#project-label{
+    position: relative;
+    top: 250px;
+}
+#about-label{
+    position: relative;
+    top: 200px;
+}
 /* Laptop screen Device or below */
 @media(max-width:995px){
     nav{
@@ -338,16 +352,16 @@ span{
     text-align: center;
     font-size: 12px;
 }
-#about-section, #display-section{
+/* #about-section, #display-section{
     margin-top: 200px;
     display: none;
     
-}
+} */
 #project{
     display: flex;
 }
 /* Laptop Below */
-@media (max-width: 1000px){
+@media (max-width: 1030px){
     .home{
         gap: 4rem;
     }
@@ -375,6 +389,14 @@ span{
     }
     .skills div h2{
         font-size: 16px;
+    }
+    #project-label{
+        position: relative;
+        top: 200px;
+    }
+    #about-label{
+        position: relative;
+        top: 25px;
     }
 }
 /* Tablet Below */
@@ -424,7 +446,14 @@ span{
     .card p{
         font-size: 8px;
     }
-    
+    #project-label{
+        position: relative;
+        top: 220px;
+    }
+    #about-label{
+        position: relative;
+        top: 25px;
+    }
 }
 /* Mobile Below */
 @media(max-width:700px){
@@ -486,6 +515,14 @@ span{
     }
     .about{
         padding: 0;
+    }
+    #about-label{
+        position: relative;
+        top: 50px;
+    }
+    #project-label{
+        position: relative;
+        top: 220px;
     }
 }
 
