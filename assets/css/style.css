@@ -64,13 +64,11 @@ nav a:active{
 }
 
 .card{
-    display: flex;
-    justify-content: center;
-    
+    width: 100%;
 }
 .card a{
     display: flex;
-    width: 33.3%    ;
+    width: 100%;
     height: 220px;
     padding: 5px 10px;
     background-color: white;
@@ -84,6 +82,26 @@ nav a:active{
 .card a:hover{
     transform: scale(1.1);
     background-image: radial-gradient( circle farthest-corner at 3.2% 49.6%,  rgba(80,12,139,0.87) 0%, rgba(161,10,144,0.72) 83.6% );
+    color: white;
+}
+
+.project-copy{
+    flex: 1;
+}
+
+.project-visual{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 45%;
+}
+
+.project-visual-icon i{
+    font-size: 4.8rem;
+    color: #b74b4b;
+}
+
+.card a:hover .project-visual-icon i{
     color: white;
 }
 
@@ -113,14 +131,14 @@ nav a:active{
     text-align: center;
     font-size: 16px;
     font-weight: bolder;
+    margin: 2rem 0 0;
+    position: static;
 }
 #project-label{
-    position: relative;
-    top: 200px;
+    margin-top: 4rem;
 }
 #about-label{
-    position: relative;
-    top: 240px;
+    margin-top: 8rem;
 }
 
 .contact{
@@ -353,6 +371,106 @@ span{
     font-size: 15px;
     font-weight: 200;
 }
+
+.education-summary{
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background: rgba(183, 75, 75, 0.1);
+    text-align: left;
+}
+
+.education-summary h4{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.education-summary ul{
+    list-style: none;
+    display: grid;
+    gap: 0.8rem;
+    font-size: 1.3rem;
+}
+
+.education-summary span{
+    color: #7d36cf;
+    font-weight: 700;
+}
+
+.about-stack{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.section-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    text-align: center;
+}
+
+.section-heading-left{
+    align-items: flex-start;
+    text-align: left;
+}
+
+.stack-heading{
+    margin-bottom: 0.5rem;
+}
+
+.section-tag{
+    color: #b74b4b;
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+.section-heading h2{
+    font-size: 2.8rem;
+    max-width: 60rem;
+}
+
+.language-grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.6rem;
+}
+
+.language-card{
+    min-height: 18rem;
+    padding: 2rem;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(183, 75, 75, 0.08));
+    border: 1px solid rgba(183, 75, 75, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    transition: 0.3s ease;
+}
+
+.language-card:hover{
+    transform: translateY(-6px);
+    border-color: #b74b4b;
+    box-shadow: 0 0 25px rgba(183, 75, 75, 0.25);
+}
+
+.language-card i{
+    font-size: 3.2rem;
+    color: #b74b4b;
+}
+
+.language-card h3{
+    font-size: 2rem;
+}
+
+.language-card p{
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
 .skills{
     display: flex;
     justify-content: start;
@@ -380,30 +498,108 @@ span{
     text-align: center;
     font-size: 12px;
 }
-.contact-storage{
+#project{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 15px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    align-items: start;
+    min-height: 100vh;
 }
-.contact-storage div{
-    background-color: #9B96A3;
-    height: 230px;
-    border-radius: 13px;
-    padding: 20px 30px;
-    gap: 5px;
-    
+
+#contact{
+    display: flex;
+    min-height: auto;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 8rem;
 }
-.contact-storage div h1{
-    font-size: 18px;
+
+.contact-heading p{
+    font-size: 1.5rem;
+    max-width: 58rem;
+    color: rgba(255,255,255,0.78);
 }
+
+.contact-panel{
+    margin-top: 3rem;
+    padding: 2.5rem;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(183, 75, 75, 0.10));
+    border: 1px solid rgba(183, 75, 75, 0.22);
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 2rem;
+    box-shadow: 0 0 35px rgba(0,0,0,0.22);
+}
+
+.contact-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.contact-intro h3{
+    font-size: 2.4rem;
+}
+
+.contact-intro p{
+    font-size: 1.5rem;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.82);
+}
+
+.contact-details{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.2rem;
+}
+
+.contact-item{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.4rem;
+    border-radius: 16px;
+    background: rgba(0,0,0,0.26);
+    border: 1px solid rgba(183, 75, 75, 0.18);
+}
+
+.contact-item i{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #b74b4b;
+    border: 0.2rem solid rgba(183, 75, 75, 0.35);
+    font-size: 1.8rem;
+    flex-shrink: 0;
+}
+
+.contact-item span{
+    display: block;
+    color: rgba(255,255,255,0.68);
+    font-size: 1.1rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+}
+
+.contact-item h4{
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
 .contact h1{
     font-size: 28px;
 }
 #project{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    align-items: start;
     min-height: 100vh;
 }
 /*Large Laptop */
@@ -439,13 +635,23 @@ span{
     .card a p{
         font-size: 8px;
     }
+    #project{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .language-grid{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .contact-panel{
+        grid-template-columns: 1fr;
+    }
+    .contact-details{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
     #project-label{
-        position: relative;
-        top: 200px;
+        margin-top: 4rem;
     }
     #about-label{
-        position: relative;
-        top: 160px;
+        margin-top: 6rem;
     }
     #project{
         min-height: 100vh;
@@ -499,33 +705,40 @@ span{
     .card a p{
         font-size: 8px;
     }
+    #project{
+        grid-template-columns: 1fr;
+    }
+    .language-grid{
+        grid-template-columns: 1fr;
+    }
+    .section-heading h2{
+        font-size: 2rem;
+    }
+    .contact-details{
+        grid-template-columns: 1fr;
+    }
+    .contact-panel{
+        padding: 1.6rem;
+    }
     #project-label{
-        position: relative;
-        top: 30px;
+        margin-top: 2rem;
     }
     #about-label{
-        position: relative;
-        top: 160rpx;
+        margin-top: 4rem;
     }
     
-    .contact-storage{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        gap: 15px;
-    }
-    .contact-storage div{
-        background-color: #9B96A3;
-        height: 230px;
-        border-radius: 13px;
-        padding: 20px 30px;
-    }
     #project{
         align-items: start;
         min-height: 60vh;
     }
-    .contact h1 i{
-        padding-left: 2px;
+    .contact-heading p{
+        font-size: 1.3rem;
+    }
+    .contact-intro h3{
+        font-size: 2rem;
+    }
+    .contact-item h4{
+        font-size: 1.3rem;
     }
 }
 /*Mobile */
@@ -599,35 +812,17 @@ span{
     header{
         position: static;
     }
-    .contact-storage{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 50% 50%;
-        gap: 15px;
-        
+    .contact-panel{
+        margin-top: 2rem;
+        padding: 1.4rem;
     }
-
-    .contact-storage div{
-        background-color: #9B96A3;
-        width: 230px;
-        height: 110px;
-        border-radius: 13px;
-        padding: 20px 30px;
+    .contact-heading h2{
+        font-size: 2rem;
     }
-    .contact-storage div h1{
-        font-size: 14px;
+    .contact-intro p{
+        font-size: 1.3rem;
     }
-    .contact-storage div h3{
-        font-size: 8px;
+    .contact-item{
+        padding: 1.2rem;
     }
-    .contact h1{
-        font-size: 16px;
-    }
-    .contact{
-        min-height: 60vh;
-    }
-    .contact h1 i{
-        padding-left: 3px;
-    }
-    
 }
